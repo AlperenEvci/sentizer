@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentiment Analiz Uygulaması</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sentiment Analiz Uygulaması</h1>
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="file">CSV Dosyası Seç:</label>
+          <input type="file" name="file" accept=".csv" required /><br /><br />
+        </div>
+        <div class="form-group">
+          <label for="column_name">Sütun İsmi:</label>
+          <input type="text" name="column_name" required /><br /><br />
+        </div>
+        <div class="form-group">
+          <button type="submit">Gönder</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
