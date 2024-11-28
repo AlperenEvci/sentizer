@@ -28,10 +28,22 @@ Sentizer, Türkçe metinlere özel geliştirilmiş bir duygu analizi uygulaması
    pip install -r requirements.txt
    ```
 
-3. **Uygulamayı Başlatma:**
-   ```bash
-   python app.py
-   ```
+3. Modelin ilk farklı kullanım şekli vardır:
+1) Local Kullanım  
+   Bert-tr-sentiment adlı klasör modelin parametrelerini ve dosyalarını içeren klasör lokalde çalıştırmak için bu dosyaya ihtiyaç var
+   Gerekli dosyaya https://huggingface.co/AlperenEvci/bert-tr-sentiment üzerinden ulaşıp klonlama yapabilirsiniz.
+   Dosya boyutu yüksek olduğu için paylaşamadım
+
+2) Transformersdan Pipeline yoluyla kullanım
+   "sentizer.py" adlı dosyada kullanım şekli yorum satırlı olarak belirtilmiştir
+
+   gerekli kütüphaneler "requirements.txt" adlı klasörde mevcuttur.
+   terminal üzerinde "pip install -r requirements.txt" komutu ile gerekli kütüphanelerin yüklenmesi sağlanır
+
+   modeli "sentiusage.ipynb" dosyası üzerinde ve terminalden "python sentizer.py" komutu ile çalıştırabilirsiniz
+   kullanılacak verideki yorumlara eş gelen sütun ismi ile işleminizi gerçekleştirip çıktı dosyasını otomatik olarak indirebilirsiniz.
+
+
    Komut çalıştırıldıktan sonra uygulama, `http://127.0.0.1:5000` adresinde açılacaktır.
 
 4. **Kullanım:**
