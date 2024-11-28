@@ -1,6 +1,3 @@
-Görselde görüldüğü üzere uygulamanızda bir form mevcut ve kullanıcıdan CSV dosyası ile analiz yapılacak sütun adını alıyorsunuz. Ardından çıktı otomatik olarak indiriliyor. Bu işleyişe uygun bir düzenleme için README'yi şu şekilde güncelleyebiliriz:
-
----
 
 ### **Sentizer: Türkçe Duygu Analizi Aracı**
 
